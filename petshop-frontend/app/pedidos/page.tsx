@@ -9,7 +9,7 @@ import { useEstaAutenticado, useAuthHidratado } from "@/lib/store/auth-store";
 import { api } from "@/lib/api";
 import { formatearPrecio } from "@/lib/utils";
 import type { Pedido, PageResponse } from "@/lib/types";
-
+import { resolverUrlImagen } from "@/lib/utils";
 const TAMANO_PAGINA = 8;
 
 export default function PedidosPage() {

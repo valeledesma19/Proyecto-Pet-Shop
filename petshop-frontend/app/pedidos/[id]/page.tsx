@@ -10,7 +10,7 @@ import { useEstaAutenticado, useAuthHidratado } from "@/lib/store/auth-store";
 import { api } from "@/lib/api";
 import { formatearPrecio } from "@/lib/utils";
 import type { Pedido } from "@/lib/types";
-
+import {resolverUrlImagen} from "@/lib/utils";
 const IMAGEN_PLACEHOLDER =
   "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?q=80&w=200&auto=format&fit=crop";
 
