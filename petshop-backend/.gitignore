@@ -1,0 +1,27 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE - IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# IDE - VS Code
+.vscode/
+
+# Entorno / secretos
+.env
+*.env.local
+
+# Logs
+*.log
+
+# Archivos subidos localmente (fuera de Docker)
+uploads/
+
+# OS
+.DS_Store
+Thumbs.db
