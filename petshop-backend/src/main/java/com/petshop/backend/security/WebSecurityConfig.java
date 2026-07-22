@@ -80,6 +80,8 @@ public class WebSecurityConfig {
                 .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         // Endpoints publicos
+                        .requestMatchers("/").permitAll()
+
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/productos/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/categorias/**").permitAll()
